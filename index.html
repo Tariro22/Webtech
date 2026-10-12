@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel ="stylesheet" href="style.css"> 
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Profile</title>
@@ -13,19 +15,25 @@
         <p>Welcome to my personal website!</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#interests">My Interests</a></li>
-            <li><a href="#skills">My Skills</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
+   <nav class="bg-white p-4 rounded-lg shadow-sm">
+  <ul class="flex flex-wrap justify-center gap-3 list-none p-0">
+    <li><a class="block rounded-md px-3 py-2 text-blue-900 hover:bg-blue-900 hover:text-white" href="#about">About Me</a></li>
+    <li><a class="block rounded-md px-3 py-2 text-blue-900 hover:bg-blue-900 hover:text-white" href="#interests">Interests</a></li>
+    <li><a class="block rounded-md px-3 py-2 text-blue-900 hover:bg-blue-900 hover:text-white" href="#skills">Skills</a></li>
+    <li><a class="block rounded-md px-3 py-2 text-blue-900 hover:bg-blue-900 hover:text-white" href="#contact">Contact Me</a></li>
+  </ul>
+</nav>
 
     <main>
 
         <section id="about">
             <h2>About Me</h2>
+
+            <img
+                src="profile.jpg.jpeg"
+                alt="My potrait"
+                class="profile-picture"
+
             <p>
                 Hello! My name is Tariro. I am a student studying
                 Computer Information Systems. I enjoy learning new
@@ -94,4 +102,4 @@
     </footer>
 
 </body>
-</html>
+</html> 

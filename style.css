@@ -1,0 +1,234 @@
+/* 1. Basic reset and box model */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f6f9;
+}
+
+/* 2. Headings and visual hierarchy */
+h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #243b53;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #334e68;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+/* 3. Main content spacing */
+main,
+header,
+aside,
+footer {
+    margin-bottom: 24px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* 4. Section backgrounds and borders */
+header,
+main,
+aside {
+    background-color: #ffffff;
+    border: 1px solid #d9e2ec;
+}
+
+footer {
+    background-color: #243b53;
+    color: #ffffff;
+}
+
+/* 5. Images resize within their containers */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 6. Form controls */
+input,
+textarea,
+button {
+    font: inherit;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #bcccdc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #243b53;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.profile-picture {
+    display: block;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #243b53;
+    margin: 16px auto;
+}
+/* Part B: Flexbox navigation layout */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: #243b53;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #243b53;
+    color: #ffffff;
+}
+
+/* Part C: CSS Grid for the Skills section */
+
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+}
+
+#skills li {
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #d9e2ec;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+/* Part D: Mobile-first responsive design */
+
+/* Base styles: small phones */
+body {
+    padding: 12px;
+}
+
+header,
+main,
+aside,
+footer {
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.profile-picture {
+    width: 140px;
+    height: 140px;
+}
+
+/* Prevent images and form controls from overflowing */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea,
+button {
+    max-width: 100%;
+}
+
+/* Tablet: 768px and above */
+@media (min-width: 768px) {
+    body {
+        padding: 24px;
+    }
+
+    header,
+    main,
+    aside,
+    footer {
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .profile-picture {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+/* Desktop: 1024px and above */
+@media (min-width: 1024px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 32px;
+    }
+
+    header,
+    main,
+    aside,
+    footer {
+        padding: 28px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #skills ul {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+}
+p,
+li,
+a {
+    overflow-wrap: anywhere;
+}
