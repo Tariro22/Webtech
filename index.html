@@ -3,75 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>My Personal Profile</title>
 </head>
+
 <body>
+
     <header>
-        <img src="C:\Users\NICHOLE TEKWA\Desktop\WebTech\WhatsApp Image 2026-09-10 at 10.44.07.jpeg" alt="Tariro Nichole Tekwa"
-     alt="My picture"
-     width="100"> 
-        <h1>Tariro's Personal Website</h1>
-        <p>Learning , creating and growing through technologies</p>
+        <h1>My Personal Profile</h1>
+        <p>Welcome to my personal website!</p>
     </header>
+
     <nav>
-        <a href="#about">About</a>
-        <a href="#interests">Interests</a>
-        <a href="#contact">Contacts</a>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#interests">My Interests</a></li>
+            <li><a href="#skills">My Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
     </nav>
 
     <main>
+
         <section id="about">
             <h2>About Me</h2>
-            <p>My name is Tariro Nichole Tekwa. I am a student interested in technology, Computer Information Systems and Web Development.</p>
+            <p>
+                Hello! My name is Tariro. I am a student studying
+                Computer Information Systems. I enjoy learning new
+                things and developing my computer skills.
+            </p>
         </section>
 
         <section id="interests">
             <h2>My Interests</h2>
-            <article>
-                <h3>Technology</h3>
-                <p> I enjoy Learning about programing , websites and web development</p>
-            </article>
+            <ul>
+                <li>Technology</li>
+                <li>Listening to music</li>
+                <li>Learning new skills</li>
+                <li>Spending time with family and friends</li>
+            </ul>
         </section>
 
-        <sectiion id="Contact">
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>Basic programming</li>
+                <li>Problem solving</li>
+                <li>Communication</li>
+            </ul>
+        </section>
+
+        <aside>
+            <h2>My Goal</h2>
+            <p>
+                My goal is to improve my technology skills and become
+                a successful professional in the IT field.
+            </p>
+        </aside>
+
+        <section id="contact">
             <h2>Contact Me</h2>
-            <form>
+
+            <form action="#" method="post">
+
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" required minlength="2">
+                <input type="text" id="name" name="name" required>
+                <br><br>
 
-                <label for="email">Email Address : </label>
-                <input type = "email" id="email" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
 
-                <label for = "phone">Phone Number</label>
-                <input 
-                type="tel"
-                id="phone"
-                name="phone"
-                pattern="[0-9]{10}"
-                required 
-                >
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                <br><br>
 
-                <label for = "message">Message : </label>
-                <textarea
-                id="message"
-                name="message"
-                required
-                minlength="10"
-                ></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <br><br>
 
-                <button type = "submit">Send Message</button>
-
-
-        
-                    
+                <button type="submit">Send Message</button>
 
             </form>
-        </sectiion>
+        </section>
 
-        <footer>
-            <p> &copy; 2026 Tariro's Personal Website. All rights reserved.</p>
-        </footer>
     </main>
-    
+
+    <footer>
+        <p>&copy; 2026 My Personal Profile. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
